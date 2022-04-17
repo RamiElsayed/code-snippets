@@ -34,13 +34,12 @@ header h3 {
 .container figure {
   display: flex;
   flex-direction: column;
-  position: relative;
   width: 22%;
   border: 0.2rem dashed var(--code-color);
-  transition: flex-basis 500ms linear;
   margin-top: 5rem;
-  max-height: 100%;
+  min-height: 100%;
   padding: 2rem;
+  flex-grow: 1;
 }
 .mid-box {
     margin: 0 2rem 0 2rem;
@@ -80,6 +79,7 @@ pre {
     rgba(232, 102, 236, 0.6) 100%
   );
   border-radius: 2rem;
+  flex-grow: 1;
 }
 
 @media only screen and (max-width: 600px) {

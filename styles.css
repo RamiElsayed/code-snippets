@@ -40,6 +40,7 @@ header h3 {
   min-height: 100%;
   padding: 2rem;
   flex-grow: 1;
+  outline-offset: -2px;
 }
 .mid-box {
     margin: 0 2rem 0 2rem;
@@ -60,15 +61,20 @@ figure h3 {
 }
 
 .container h4 {
-    margin: 0;
+    position: relative;
+    top: -2rem;
     color: var(--headings-color);
     padding-left: 2rem;
+    margin-top: 0;
 }
 .container h4,
 pre {
   font-size: 2rem;
 }
 .container pre {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     white-space: pre-wrap;
     overflow: auto;
     tab-size: 4;
